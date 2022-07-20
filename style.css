@@ -20,9 +20,15 @@ body{
 
 }
 .first-title h1{
+    text-align: center;
     font-size: 35px;
     font-weight: 700;
+    padding-right:200px;
+    margin: 35px;
 
+}
+.para{
+    width: 60%;
 }
 .banner-image{
     width: 600px;
@@ -139,9 +145,8 @@ hr{
 /* media queary */
 
 @media only screen and (max-width:550px) {
-    .container {
+    .container, .first-title {
         grid-template-columns: repeat(1,1fr);
-        display: grid;
         justify-items: center;
         width: auto;
 
