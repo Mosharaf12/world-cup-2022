@@ -144,12 +144,29 @@ hr{
 }
 /* media queary */
 
-@media only screen and (max-width:550px) {
-    .container, .first-title {
+@media only screen and (max-width:576px) {
+    .container {
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
         width: auto;
+        width: auto;
 
+    }
+    .first-title{
+        width: unset;
+        display: flex;
+    flex-direction: column;
+
+    }
+    .para{
+        width: unset;
+    }
+    .banner-image{
+        width: unset;
+    }
+    .first-title h1{
+        margin:unset;
+        padding: unset;
     }
     
     .mid-section, .second-container {
@@ -171,12 +188,25 @@ hr{
      
     }
     
-@media only screen and (min-width:551px) and (max-width:850px) {
+@media only screen and (min-width:577px) and (max-width:972px) {
      
-    .first-section {
+    .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
         
+    }
+    .mid-section{
+        display: block;
+    }
+    .button{
+        width: unset;
+        border: unset;
+        background-color: unset
+        ;
+    }
+    .second-container{
+        grid-template-columns: repeat(2, 1fr);
     }
      .first-section , .first-title {
         width: 20%;
